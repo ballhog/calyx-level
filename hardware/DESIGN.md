@@ -88,7 +88,13 @@ are open, as in the bench notes.
 
 ## Status
 
-#STATUS#
+- **Schematic:** generated; `check_netlist.py` reports 57 intended nets, 0 problems. KiCad 7's CLI has no ERC, so run
+  ERC once in KiCad 10.
+- **Board:** placed, autorouted (Freerouting, 60 passes: 704 segments, 51 vias), GND pours both sides.
+  **DRC: no copper errors and no unconnected items.** Left: 23 silk-to-edge and 3 silk-overlap warnings (cosmetic),
+  plus "library not in this configuration" notes from the KiCad 7 build machine.
+- **Fab files:** `make_fab.py` writes gerbers, drill, BOM and CPL (45 BOM lines, 39 without an LCSC number yet).
+  Renders: [top](calyx-level-carrier/renders/top.png), [bottom](calyx-level-carrier/renders/bottom.png).
 
 ### Before ordering
 

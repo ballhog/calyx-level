@@ -22,10 +22,11 @@ Olimex ESP32-POE-ISO boards on a blank Arduino Uno proto shield, so off-the-shel
 | [docs/parts.md](docs/parts.md) | Parts list (bench build and per node), with what's already on hand |
 | [docs/schematic.md](docs/schematic.md) | Wiring, pin map (Uno names ↔ ESP32 GPIO), input/output circuits, power |
 | [docs/provisioning.md](docs/provisioning.md) | First flash, node role and id, Coeno OTA, publishing builds |
+| [hardware/DESIGN.md](hardware/DESIGN.md) | KiCad carrier rev A: schematic, PCB, build options, checks before ordering |
 
-## Status (2026-10-23)
+## Status (2026-10-26)
 
-Design only. No firmware yet. Coeno already serves `/firmware/calyx-level/latest.json` (Coeno `b9fa573`).
+Carrier PCB rev A designed (schematic + routed board, DRC copper-clean; see hardware/DESIGN.md). No firmware yet. Coeno already serves `/firmware/calyx-level/latest.json` (Coeno `b9fa573`).
 
 ## Related
 

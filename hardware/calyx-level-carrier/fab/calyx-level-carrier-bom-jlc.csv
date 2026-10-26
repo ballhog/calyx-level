@@ -1,0 +1,46 @@
+Comment,Designator,Footprint,LCSC Part #,MPN
+5V active,BZ1,Buzzer_12x9.5RM7.6,,"PUI AI-1223-TWT-5V-2-R (verify: 12 mm, 7.6 mm pitch, active 5 V)"
+10uF 50V,C1,C_1206_3216Metric_Pad1.33x1.80mm_HandSolder,,
+100nF,"C10,C20,C30,C40,C50,C60",C_0603_1608Metric_Pad1.08x0.95mm_HandSolder,,
+100nF 50V,"C2,C4",C_0603_1608Metric_Pad1.08x0.95mm_HandSolder,,
+100uF 35V,C3,CP_Radial_D6.3mm_P2.50mm,,
+10uF,C7,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,,
+SS34,"D1,D6",D_SMA,,SS34
+PESD5V0S1BL,"D10,D20,D30,D40,D50,D60",D_SOD-323,,PESD5V0S1BL
+SMAJ24CA,D2,D_SMA,,SMAJ24CA
+RED,D3,LED_0603_1608Metric,,
+1N4148W,"D4,D71",D_SOD-123,,
+GREEN,D5,LED_0603_1608Metric,,
+YELLOW,D7,LED_0603_1608Metric,,
+BLUE,D70,LED_0603_1608Metric,,
+2A,F1,Fuseholder_Littelfuse_Nano2_154x,,Littelfuse 0154002.DRT holder + 0453002.MR fuse (verify)
+100mA hold,F2,Fuse_1812_4532Metric,,"Bourns MF-MSMF010-2 (0.1 A, 60 V)"
+EXT1,J1,PinSocket_1x10_P2.54mm_Vertical,,
+PUMP SUPPLY,J10,"TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal",,"MKDS 1,5/2-5,08 (1715721)"
+HIGH FLOAT,J11,"TerminalBlock_Phoenix_MKDS-1,5-3-5.08_1x03_P5.08mm_Horizontal",,"MKDS 1,5/3-5,08 (1715734)"
+PUMP,J12,"TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal",,"MKDS 1,5/2-5,08 (1715721)"
+STEPSTICK L,J13,PinSocket_1x08_P2.54mm_Vertical,,
+STEPSTICK R,J14,PinSocket_1x08_P2.54mm_Vertical,,
+MOTOR,J15,JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical,,B4B-XH-A
+EXT2,J2,PinSocket_1x10_P2.54mm_Vertical,,
+LVL_A,J3,Jack_3.5mm_KoreanHropartsElec_PJ-320D-4A_Horizontal,C95562,
+LVL_B,J4,Jack_3.5mm_KoreanHropartsElec_PJ-320D-4A_Horizontal,C95562,
+RO_LOW,J5,Jack_3.5mm_KoreanHropartsElec_PJ-320D-4A_Horizontal,C95562,
+LEAK,J6,Jack_3.5mm_KoreanHropartsElec_PJ-320D-4A_Horizontal,C95562,
+SPARE_IN1,J7,Jack_3.5mm_KoreanHropartsElec_PJ-320D-4A_Horizontal,C95562,
+SPARE_IN2,J8,Jack_3.5mm_KoreanHropartsElec_PJ-320D-4A_Horizontal,C95562,
+PUMP SUPPLY,J9,BarrelJack_CUI_PJ-102AH_Horizontal,,PJ-102AH
+SENS_V,JP1,PinHeader_1x03_P2.54mm_Vertical,,
+MS1,JP2,PinHeader_1x02_P2.54mm_Vertical,,
+MS2,JP3,PinHeader_1x02_P2.54mm_Vertical,,
+RST-SLP,JP4,SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm,,
+G5LE-1 DC24,K1,Relay_SPDT_Omron-G5LE-1,,G5LE-1 DC24
+IRLML0040,Q1,SOT-23,,IRLML0040TRPBF
+MMBT3904,Q70,SOT-23,,
+100R,"R10,R20,R30,R40,R50,R60,R76",R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,,
+10k,"R11,R21,R31,R41,R51,R61,R72,R73,R75,R77,R78",R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,,
+1k,"R12,R22,R32,R42,R52,R62,R71",R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,,
+0R,"R14,R24,R34,R44,R54,R64",R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,,
+330R,R70,R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,,
+4.7k,R74,R_1206_3216Metric_Pad1.30x1.75mm_HandSolder,,
+PC817,U4,SMDIP-4_W9.53mm,,PC817 SMD gull-wing (verify lead span)
