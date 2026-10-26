@@ -165,7 +165,7 @@ def route_once(attempt):
         os.remove(ses)
     if not pcbnew.ExportSpecctraDSN(board, dsn):
         sys.exit('DSN export failed')
-    cmd = ['xvfb-run', '-a', 'java', '-jar', JAR, '-de', dsn, '-do', ses, '-mp', '20', '-host', 'calyx-level']
+    cmd = ['xvfb-run', '-a', 'java', '-jar', JAR, '-de', dsn, '-do', ses, '-mp', os.environ.get('FR_PASSES', '20'), '-host', 'calyx-level']
     subprocess.run(cmd, check=False, timeout=1200, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
     if not os.path.exists(ses):
         sys.exit('Freerouting produced no session file')
@@ -190,7 +190,7 @@ def route_once(attempt):
 
 def main():
     os.makedirs(WORK, exist_ok=True)
-    for attempt in range(1, 9):
+    for attempt in range(1, int(os.environ.get('FR_ATTEMPTS', '8')) + 1):
         board, rpt, bad = route_once(attempt)
         if not bad:
             break
