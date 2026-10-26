@@ -1,0 +1,11 @@
+(version 1)
+# Calyx-Level carrier design rules. Board-level minimums (JLCPCB 2-layer) come from the project's Board Setup.
+(rule "within_footprint"
+  (constraint clearance (min 0.127mm))
+  (condition "A.Parent == B.Parent")
+)
+# 12/24 V pump side: a little more room than the 3.3 V logic
+(rule "pump_clearance"
+  (constraint clearance (min 0.3mm))
+  (condition "A.NetClass == 'Pump' && B.NetClass != 'Pump'")
+)
