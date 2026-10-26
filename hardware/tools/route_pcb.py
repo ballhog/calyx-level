@@ -165,7 +165,7 @@ def route_once(attempt):
         os.remove(ses)
     if not pcbnew.ExportSpecctraDSN(board, dsn):
         sys.exit('DSN export failed')
-    cmd = ['xvfb-run', '-a', 'java', '-jar', JAR, '-de', dsn, '-do', ses, '-mp', '30', '-host', 'calyx-level']
+    cmd = ['xvfb-run', '-a', 'java', '-jar', JAR, '-de', dsn, '-do', ses, '-mp', '20', '-host', 'calyx-level']
     subprocess.run(cmd, check=False, timeout=1200, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
     if not os.path.exists(ses):
         sys.exit('Freerouting produced no session file')
@@ -184,7 +184,7 @@ def route_once(attempt):
             counts[m.group(1)] = counts.get(m.group(1), 0) + 1
     bad = sum(v for k, v in counts.items() if k in COPPER_ERRORS)
     print('attempt %d: %d segments, %d vias, %d pruned; DRC %s' % (
-        attempt, nt, nv, pruned, ', '.join('%s %d' % kv for kv in sorted(counts.items())) or 'clean'))
+        attempt, nt, nv, pruned, ', '.join('%s %d' % kv for kv in sorted(counts.items())) or 'clean'), flush=True)
     return board, rpt, bad
 
 

@@ -4,8 +4,4 @@
   (constraint clearance (min 0.127mm))
   (condition "A.Parent == B.Parent")
 )
-# 12/24 V pump side: a little more room than the 3.3 V logic
-(rule "pump_clearance"
-  (constraint clearance (min 0.3mm))
-  (condition "A.NetClass == 'Pump' && B.NetClass != 'Pump'")
-)
+# The Pump net class carries 0.3 mm clearance (in the .kicad_pro), so Freerouting honours it too.
